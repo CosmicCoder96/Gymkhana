@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GeekHaven</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/reset.css" rel="stylesheet"><!-- CSS reset -->
+  <link href="css/style.css" media="screen" rel="stylesheet" type="text/css"><!-- Resource style -->
+
+  <script src="js/modernizr.js">
+  </script>
+  <link href="css/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+  </script>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <script src="https://use.fontawesome.com/994d7c72ea.js">
+  </script>
+  <style>
+  /*.logo-container {
+     width: 100%;
+     height: 200px;
+     max-height: 240px;
+     overflow: hidden;
+     margin: 0;
+     position: relative; 
+  }*/
+  /*.main-logo{
+    top:0;
+   left:35vw;
+   position: absolute;
+   float: left;
+   }*/
+   .tabs_item {
+  display: none;
+  padding: 30px 0;
+}
+.tabs_item:first-child {
+  display: block;
+}
+.current a {
+  color: #fff;
+  background: #87d3b7;
+}
+  </style>
+</head>
+<body>
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+  <div class ="tab">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="#"><img height="30px" src="images/logo.png" width="30px"></a>
+      </div><!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav tabs">
+          <li>
+            <a href="#">About us</a>
+          </li>
+          <li>
+            <a href="#">Hall Of Fame</a>
+          </li>
+          <li>
+            <a href="#">Help</a>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <div class="tab_content">
+    <div class="tabs_item">
+      <div class="pattern"></div>
+      <div class="container">
+        <div class="logo-container">
+          <h1 class="test" id="main"><img height="400" id="main-logo" src="images/glogo-2.png" width="400"></h1>
+        </div>
+        <h4 class="test" id="main2">The Student Senate of IIIT Allahabad</h4>
+      </div>
+      <div id="stage">
+        <div id="circle-menu">
+          <a class="menu-trigger" data-close="CLOSE" data-open="" href="#"><i aria-hidden="true" class="fa fa-power-off"></i></a>
+          <ul>
+            <li>
+              <a class="link" href="#">WebD</a>
+            </li>
+            <li>
+              <a class="link" href="#">AppD</a>
+            </li>
+            <li>
+              <a class="link" href="#">FOSS</a>
+            </li>
+            <li>
+              <a class="link" href="#" style="font-size:1.8em;line-height:0.8;">Competetive<br>
+              Coding</a>
+            </li>
+            <li>
+              <a class="link" href="#">Graphics</a>
+            </li>
+            <li>
+              <a class="link" href="#">Networking</a>
+            </li>
+            <li>
+              <a class="link" href="#">Tesla</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class = "tabs_item">
+    HALL OF FAME SECTION
+    <div id="wrapper">
+      <div id="share">
+        <a class="container-share-buttons github" href="https://github.com/GeekHaven" target="_blank"><svg class="circle" preserveaspectratio="xMinYMin meet" viewbox="0 0 200 200">
+        <circle cx="100" cy="100" r="50"></circle></svg>
+        <div class="social">
+          <i class="fa fa-github"></i>
+        </div></a> <a class="container-share-buttons facebook" href="https://www.facebook.com/geekhaveniiita/?fref=ts" target="_blank"><svg class="circle" preserveaspectratio="xMinYMin meet" viewbox="0 0 200 200">
+        <circle cx="100" cy="100" r="50"></circle></svg>
+        <div class="social">
+          <i class="fa fa-facebook"></i>
+        </div></a> <a class="container-share-buttons google" href="https://plus.google.com/u/1/118390717533828973882" target="_blank"><svg class="circle" preserveaspectratio="xMinYMin meet" viewbox="0 0 200 200">
+        <circle cx="100" cy="100" r="50"></circle></svg>
+        <div class="social">
+          <i class="fa fa-google-plus"></i>
+        </div></a>
+      </div>
+    </div>
+    </div>
+    <div class="tabs_item">
+    Help section
+    </div>
+    </div>
+    <script src="js/velocity.min.js">
+    </script> 
+    <script src="js/modal.js">
+    </script> 
+    <script src="js/index.js">
+    </script> 
+    <script>
+      $(document).ready(function() { 
+
+    (function ($) { 
+    $("#main-logo").fadeOut(4000, function() {
+          $("#main-logo").attr('src','images/glogo-1.png');
+    }).fadeIn(400);
+      $('.tab ul.tabs').addClass('active').find('> li:eq(0)').addClass('current');
+      
+      $('.tab ul.tabs li a').click(function (g) { 
+        var tab = $(this).closest('.tab'), 
+          index = $(this).closest('li').index();
+          console.log('1s');
+        
+        tab.find('ul.tabs > li').removeClass('current');
+        $(this).closest('li').addClass('current');
+                  console.log('1s');
+
+        tab.find('.tab_content').find('div.tabs_item').not('div.tabs_item:eq(' + index + ')').fadeOut();
+        tab.find('.tab_content').find('div.tabs_item:eq(' + index + ')').fadeIn();
+        
+        g.preventDefault();
+      } );
+    })(jQuery);
+
+    });
+    </script> 
+  </div>
+
+</body>
+</html>
