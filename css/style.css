@@ -38,8 +38,8 @@ header h3 a:hover {
 }
 #circle-menu {
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 14em;
+  height: 14em;
   position: absolute;
   margin-bottom:0;
   top: 50%;
@@ -73,12 +73,15 @@ header h3 a:hover {
   background-clip: padding-box;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  background:url('../images/councils.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
+
 #circle-menu .menu-trigger:hover
 {
-background-color:#a71405;
-border :2px solid #a71405;
-}
+border :2px solid rgb(29,29,29);
+} 
 #circle-menu .menu-trigger:before,
 #circle-menu .menu-trigger:after {
   position: absolute;
@@ -106,8 +109,8 @@ border :2px solid #a71405;
 }
 #circle-menu ul li {
   position: absolute;
-  width: 11rem;
-  height: 11rem;
+  width: 12em;
+  height: 12em;
   display: inline-block;
   -webkit-border-radius: 50%;
   -webkit-background-clip: padding-box;
@@ -120,34 +123,54 @@ border :2px solid #a71405;
   opacity: 0;
   -webkit-transition: all 0.85s cubic-bezier(0, 1.8, 1, 1.2);
   transition: all 0.85s cubic-bezier(0, 1.8, 1, 1.2);
+
 }
 #circle-menu ul li:nth-child(1) {
-  background-color: #1abc9c;
+  /*background-color: #1abc9c;*/
+  background:url('../images/technical.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 
 }
 #circle-menu ul li:nth-child(2) {
   background-color: #3498db;
+    background:url('../images/cultural.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 
 }
 #circle-menu ul li:nth-child(3) {
   background-color: #e67e22;
-
+  background:url('../images/academic.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 #circle-menu ul li:nth-child(4) {
   background-color: green;
   
-
+  background:url('../images/presidential.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 #circle-menu ul li:nth-child(5) {
   background-color: #990000;
+    background:url('../images/sports.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 
 }
 #circle-menu ul li:nth-child(6) {
   background-color: #926517;
+    background:url('../images/presidential.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 
 }
 #circle-menu ul li:nth-child(7) {
   background-color: #8e44ad;
+    background:url('../images/presidential.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 
 }
 #circle-menu ul li a {
@@ -158,8 +181,13 @@ border :2px solid #a71405;
   text-align: center;
 }
 #circle-menu.open .menu-trigger {
-  background: transparent;
-  border-color: #e74c3c;
+  /*background: transparent;*/
+  border-color: rgb(29,29,29);
+  width: 4em;
+  height: 4em;
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
 }
 #circle-menu.open .menu-trigger:before {
   -webkit-opacity: 0;
@@ -173,9 +201,9 @@ border :2px solid #a71405;
   -webkit-opacity: 1;
   -moz-opacity: 1;
   opacity: 1;
-  -webkit-transform: translateY(0px);
-  -ms-transform: translateY(0px);
-  transform: translateY(0px);
+  -webkit-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  transform: translateY(5px);
 }
 #circle-menu.open ul li {
   -webkit-opacity: 1;
@@ -183,44 +211,39 @@ border :2px solid #a71405;
   opacity: 1;
 }
 #circle-menu.open ul li:nth-child(1) {
-  -webkit-transform: translate3D(-12em,-0em,0);
-  -ms-transform: translate3D(-12em,-0em,0);
-  transform: translate3D(-12em,-0em,0);
+  -webkit-transform: translate3D(-18em,-0em,0);
+  -ms-transform: translate3D(-18em,-0em,0);
+  transform: translate3D(-18em,-0em,0);
 
 }
+
 #circle-menu.open ul li:nth-child(2) {
- -webkit-transform: translate3D(7em,9em,0);
-  -ms-transform: translate3D(7em,9em,0);
-  transform: translate3D(7em,9em,0);
+  -webkit-transform: translate3D(12.5em,0em,0);
+  -ms-transform: translate3D(12.5em,0em,0);
+  transform: translate3D(12.5em,0em,0);
+
 
 }
 #circle-menu.open ul li:nth-child(3) {
-  -webkit-transform: translate3D(12em,0em,0);
-  -ms-transform: translate3D(12em,0em,0);
-  transform: translate3D(12em,0em,0);
 
+  -webkit-transform: translate3D(4.5em,11em,0);
+  -ms-transform: translate3D(4.5em,11em,0);
+  transform: translate3D(4.5em,11em,0);
 
 }
 #circle-menu.open ul li:nth-child(4) {
-
-  -webkit-transform: translate3D(-9em,-9em,0);
-  -ms-transform: translate3D(-9em,-9em,0);
-  transform: translate3D(-9em,-9em,0);
+  -webkit-transform: translate3D(-2em,-14em,0);
+  -ms-transform: translate3D(-2em,-14em,0);
+  transform: translate3D(-2em,-14em,0);
 
 }
 #circle-menu.open ul li:nth-child(5) {
-  -webkit-transform: translate3D(9em,-9em,0);
-  -ms-transform: translate3D(9em,-9em,0);
-  transform: translate3D(9em,-9em,0);
+  -webkit-transform: translate3D(-10em,11em,0);
+  -ms-transform: translate3D(-10em,11em,0);
+  transform: translate3D(-10em,11em,0);
 
 }
 #circle-menu.open ul li:nth-child(6) {
-  -webkit-transform: translate3D(-7em,9em,0);
-  -ms-transform: translate3D(-7em,9em,0);
-  transform: translate3D(-7em,9em,0);
-
-}
-#circle-menu.open ul li:nth-child(7) {
   -webkit-transform: translate3D(0em,-12em,0);
   -ms-transform: translate3D(0em,-12em,0);
   transform: translate3D(0em,-12em,0);
