@@ -12,7 +12,8 @@ var flag=0;
   	if(flag==0){
   $(".fa-power-off").css({'visibility':'hidden'});
 	$("#wrapper").css({'visibility':'hidden'});
-  		$('.test').css({
+  // $("body").css({'background-color':'rgb(240,240,240'});
+  		$('.test,#content-1,#content-2').css({
   	
    'filter'         : 'blur(5px)',
    '-webkit-filter' : 'blur(5px)',
@@ -25,7 +26,7 @@ var flag=0;
 }
   		else
   		{
-  				$('.test').css({
+  				$('.test,#content-1,#content-2').css({
   	
    'filter'         : 'blur(0px)',
    '-webkit-filter' : 'blur(0px)',
@@ -34,6 +35,9 @@ var flag=0;
    '-ms-filter'     : 'blur(0px)'
 });
     $(".fa-power-off").css({'visibility':'visible'});
+      // $("body").css({'background-color':'rgb(255,255,255'});
+
+
 
 	$("#wrapper").css({'visibility':'visible'});
   				flag=0;
