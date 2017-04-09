@@ -19,8 +19,10 @@
   <link href="css/main.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
   <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
-  <script src="https://use.fontawesome.com/994d7c72ea.js">
-  </script>
+  <script src="https://use.fontawesome.com/994d7c72ea.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Caveat|Fjalla+One|Gloria+Hallelujah|Indie+Flower|Lato|Nunito|Open+Sans|Open+Sans+Condensed:300|Oswald|PT+Sans|Raleway|Roboto|Roboto+Condensed|Shadows+Into+Light" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/loader.css">
+  <script type="text/javascript" src="js/loader.js"></script>
   <style>
   /*.logo-container {
      width: 100%;
@@ -36,6 +38,9 @@
    position: absolute;
    float: left;
    }*/
+   body {
+    background-color: #f8f8ff;
+   }
    #content-1{
     padding-top:12%;
     padding-left: 4%;
@@ -69,15 +74,99 @@ font-size: 1.25em;
 .navbar-nav>li>a{
   padding-top:25px;
 }
-  </style>
 
+
+.col-lg-6.col-md-12.col-sm-12.col-xs-12,
+.round {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.7);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    z-index: -20;
+    display: block;
+    border: 2px solid #000;
+     /*filter: grayscale(100%);*/
+  }
+
+.content {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+}
+
+#hall {
+  margin-top: 13%;
+  margin-left: 8%;
+  margin-right: 5%;
+}
+
+.content:hover
+.overlay {
+  opacity: 0.7;
+  box-shadow: 0px 15px 15px rgba(0,0,0,0.7);
+  filter: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 3;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 320px;
+  width: 320px;
+  border-radius: 50%;
+  margin-left:16px;
+  opacity: 0;
+  transition: 0.2s ease;
+  background-color: rgba(0,0,0,1);
+}
+
+.text {
+  color: #fff;
+  font-weight: 700;
+  font-size: 21px;
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+#hd {
+  text-align: center;
+  font-size: 100px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+hr {
+  border:none;
+  height: 20px;
+  width: 90%;
+  height: 50px;
+  margin-top: 0;
+  border-bottom: 1px solid #1f1209;
+  box-shadow: 0 20px 20px -20px #333;
+  margin: -50px auto 10px; 
+}
+
+  </style>
 </head>
 <body>
-  <div id="loader-wrapper">
-    <div id="loader"></div>
-    <div class="loader-section section-left"></div>
-    <div class="loader-section section-right"></div>
+  <div id="preloader">
+  <div id="status">
+      <div class="spinner">
+      <div class="rect1"></div>
+      <div class="rect2"></div>
+      <div class="rect3"></div>
+      <div class="rect4"></div>
+      <div class="rect5"></div>
+    </div>
   </div>
+</div>
+
   <div class ="tab">
   <nav class="navbar navbar-default">
     <div class="container-fluid">
@@ -110,7 +199,6 @@ font-size: 1.25em;
         </div>
         <h4 class="test" id="main2">The Student Senate of IIIT Allahabad</h4>
       </div>
-
   
       <div class = "row">
               <div class = "col-lg-4 col-sm-4" id  = "content-1">Hi, we are the Gymkhana.
@@ -149,10 +237,112 @@ font-size: 1.25em;
               </div>
       </div>
     </div>
-    <div class = "tabs_item">
-    HALL OF FAME SECTION
+    <div class = "tabs_item" id="hall">
     <div id="wrapper">
-      <div id="share">
+    <div class="container" id="hd"> 
+      <h3 style="text-align: center;font-size:60px;">Meet the Hall of Fame</h3>
+      <hr>
+    </div>
+    <!--   <h3 style="text-align:center;font-size:65px;font-family: 'Josefin Sans', sans-serif;">Hall of Fame !</h3> -->
+      <div class="container">
+        <div class="row"> 
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="background-color:#f8f8ff;">
+            <div class="content">
+               <img src="2ts5hna67k8-matthew-henry.jpg" class="round">
+               <div class="overlay">
+                 <div class="text" style=" font-family: 'Josefin Sans', sans-serif;">Gagan Ganapathy</div>
+               </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="background-color:#f8f8ff;">
+              <div class="content">
+               <img src="akv-b_uelry-aleksandra-mazur.jpg" class="round">
+               <div class="overlay">
+                 <div class="text" style=" font-family: 'Josefin Sans', sans-serif;">Gagan Ganapathy</div>
+               </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="background-color:#f8f8ff;">
+               <div class="content">
+               <img src="lawralb1w7m-kaci-baum.jpg" class="round">
+               <div class="overlay">
+                 <div class="text" style=" font-family: 'Josefin Sans', sans-serif;">Gagan Ganapathy</div>
+               </div>
+            </div>
+          </div>
+        </div>
+          <div class="row"> 
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="background-color:#f8f8ff;">
+            <div class="content">
+               <img src="2ts5hna67k8-matthew-henry.jpg" class="round">
+               <div class="overlay">
+                 <div class="text" style=" font-family: 'Josefin Sans', sans-serif;">Gagan Ganapathy</div>
+               </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="background-color:#f8f8ff;">
+              <div class="content">
+               <img src="akv-b_uelry-aleksandra-mazur.jpg" class="round">
+               <div class="overlay">
+                 <div class="text" style=" font-family: 'Josefin Sans', sans-serif;">Gagan Ganapathy</div>
+               </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="background-color:#f8f8ff;">
+               <div class="content">
+               <img src="lawralb1w7m-kaci-baum.jpg" class="round">
+               <div class="overlay">
+                 <div class="text" style=" font-family: 'Josefin Sans', sans-serif;">Gagan Ganapathy</div>
+               </div>
+            </div>
+          </div>
+        </div>
+          <div class="row"> 
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="background-color:#f8f8ff;">
+            <div class="content">
+               <img src="2ts5hna67k8-matthew-henry.jpg" class="round">
+               <div class="overlay">
+                 <div class="text" style=" font-family: 'Josefin Sans', sans-serif;">Gagan Ganapathy</div>
+               </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="background-color:#f8f8ff;">
+              <div class="content">
+               <img src="akv-b_uelry-aleksandra-mazur.jpg" class="round">
+               <div class="overlay">
+                 <div class="text" style=" font-family: 'Josefin Sans', sans-serif;">Gagan Ganapathy</div>
+               </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="background-color:#f8f8ff;">
+               <div class="content">
+               <img src="lawralb1w7m-kaci-baum.jpg" class="round">
+               <div class="overlay">
+                 <div class="text" style=" font-family: 'Josefin Sans', sans-serif;">Gagan Ganapathy</div>
+               </div>
+            </div>
+          </div>
+        </div>
+          <div class="row"> 
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="width:400px;height:400px;background-color:#f8f8ff;">
+            
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="background-color:#f8f8ff;">
+              <div class="content">
+               <img src="akv-b_uelry-aleksandra-mazur.jpg" class="round">
+               <div class="overlay">
+                 <div class="text" style=" font-family: 'Josefin Sans', sans-serif;">Gagan Ganapathy</div>
+               </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="width:380px;height:380px;background-color:#f8f8ff">      
+          </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+      <!-- <div id="share">
         <a class="container-share-buttons github" href="https://github.com/GeekHaven" target="_blank"><svg class="circle" preserveaspectratio="xMinYMin meet" viewbox="0 0 200 200">
         <circle cx="100" cy="100" r="50"></circle></svg>
         <div class="social">
@@ -165,8 +355,9 @@ font-size: 1.25em;
         <circle cx="100" cy="100" r="50"></circle></svg>
         <div class="social">
           <i class="fa fa-google-plus"></i>
-        </div></a>
-      </div>
+        </div>
+        </a>
+      </div> -->
     </div>
     </div>
     <div class="tabs_item">
